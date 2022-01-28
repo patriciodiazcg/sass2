@@ -1,0 +1,328 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+
+/* Cover */
+
+#cover {
+    background-image: url(../img/Cover_01.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #000;
+    height: fit-content;
+}
+
+.cover__background {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:rgba(0, 0, 0, 0.5);
+    
+}
+
+.cover__titulo {
+    width: 50%;
+    font-size: 24px;
+    color: #fff;
+    padding-top: 10px;
+}
+
+.cover__texto {
+    width: 50%;
+    font-size: 18px;
+    color: #fff;
+    padding-top: 10px;
+}
+
+.cover__btn {
+    background-color: #fff;
+    border: none;
+    color: #000;
+    margin: 20px ;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+/* Portfolio */
+
+.portfolio {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.portfolio__titulo {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    padding: 20px;
+}
+
+.portfolio__img {
+    width: 100%;
+    height: auto;
+    filter: grayscale(100);
+    transition: 0.5s;
+}
+
+.portfolio__img:hover {
+    filter: grayscale(0);
+    transform: scale(1.05);
+    z-index: 999;
+}
+
+
+
+/* Feature */
+
+.feature {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto
+}
+
+.feature__article {
+    margin: 25px 50px;
+    text-align: center;
+
+}
+
+.feature__icon {
+    width: 100px;
+}
+
+.feature__texto {
+    padding-top: 20px;
+    line-height: 30px;
+}
+
+/* We are */
+
+#we {
+    padding: 50px 0;
+
+}
+ .we__containter {
+     display: flex;
+     flex-direction: column;
+     flex-wrap: wrap;
+     margin: auto;
+     width: 100%
+
+ }
+
+.we__img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.we__are {
+    width: 100%;
+    margin: auto;
+    padding: 50px;
+    line-height: 25px;
+
+}
+.we__titulo {
+    padding-bottom: 20px;
+}
+
+
+
+
+/* Services */
+
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 70%;
+    margin: auto;
+}
+
+.services__titulo {
+    display: flex;
+    justify-content: center;
+    margin: 50px auto;
+}
+
+
+.services__item {
+    width: 500px;
+    margin: 100px 30px;
+    text-align: center;
+
+}
+
+.services__icon {
+    width: 100px;
+    margin-bottom: 50px;
+    border: 1px solid #000;
+    border-radius: 100%;
+    padding: 10px;
+
+}
+
+.services__texto {
+    padding-top: 20px;
+    line-height: 30px;
+    text-align: justify
+}
+
+
+/* Contact */
+
+#contact {
+    display: flex;
+    justify-content: center;
+    margin: 50px 0;
+}
+
+fieldset {
+    border: none;
+}
+
+.contact__titulo {
+    font-size: 30px;
+    font-weight: 500;
+    margin: 30px auto;
+}
+
+.contact {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+input[type=text], input[type=email], textarea[name=comment] {
+    border: none;
+    border-bottom: 1px solid #000;
+    padding: 10px;
+    margin: 20px 0;
+}
+
+input:focus {
+    outline: none;
+}
+
+textarea {
+    resize: none;
+    min-height: 50px;
+}
+
+.contact__btn {
+    background-color: #000;
+    border: none;
+    color: #fff;
+    width: 100px;
+    height: 30px;
+    margin: auto;
+}
+
+
+
+
+
+
+
+@media (min-width: 768px) {
+    
+
+    /* Cover */
+
+    #cover {
+        height: 800px;
+    }
+
+    .cover {
+        height: 800px;
+        padding-bottom: 50px;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+
+}
+
+
+
+@media (min-width: 1024px) {
+
+    /* Portfolio */
+
+    #portfolio {
+        max-width: 1680px;
+        margin: auto;
+    }
+
+    .portfolio {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .portfolio__img {
+        width: 500px;
+        height: 500px;
+        padding: 10px;
+        object-fit: cover;
+    }
+
+    /* Feature */
+
+    #feature {
+        max-width: 1680px;
+        margin: auto;
+    }
+
+    .feature {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .feature__article {
+        text-align: center;
+    
+    }
+
+    /* We are */
+
+    #we {
+        max-width: 1680px;
+        margin: auto;
+    }
+
+    .we__containter {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+
+
+    /* Services */
+
+    #services {
+        max-width: 1280px;
+        margin:70px auto;
+    }
+
+    .services {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+
+
+}

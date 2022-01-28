@@ -1,0 +1,225 @@
+.about {
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+}
+
+.about__img img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.about__texto {
+  width: 100%;
+  color: #000;
+  line-height: 30px;
+  margin: 70px auto;
+  padding: 0 30px;
+}
+
+.about__texto h2 {
+  margin-bottom: 20px;
+  font-size: 30px;
+}
+
+@media (min-width: 1024px) {
+  .about {
+    max-width: 1280px;
+    margin: 70px auto;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+}
+
+.footer {
+  background-color: gray;
+}
+
+.footer__container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+}
+
+.footer__logo {
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  width: 100px;
+  margin: 20px auto;
+}
+
+.footer iframe {
+  margin: 0px auto;
+  width: 100%;
+}
+
+.footer__contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 20px auto;
+  color: #fff;
+  line-height: 30px;
+}
+
+.footer__contact .footer__social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer__contact .footer__social li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 20px;
+  padding: 0 20px;
+}
+
+@media (min-width: 768px) {
+  .footer__container {
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.header {
+  background-color: #000;
+  height: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header__logo {
+  height: 50px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-left: 10px;
+}
+
+.header .menu {
+  color: #fff;
+  font-size: 30px;
+  margin-right: 10px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.header__nav {
+  display: none;
+}
+
+.header__nav ul li {
+  display: block;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 10px;
+}
+
+.header__nav ul li a {
+  text-decoration: none;
+}
+
+.header__nav ul li a:visited {
+  text-decoration: none;
+  color: #fff;
+}
+
+@media (min-width: 768px) {
+  .menu {
+    display: none;
+  }
+  .header__nav {
+    display: inline-block;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .header__nav ul li {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 10px;
+  }
+}
+
+.imageGallery, .project__gallery a img {
+  width: 100%;
+  height: auto;
+  -webkit-filter: grayscale(100);
+          filter: grayscale(100);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.imageGallery:hover, .project__gallery a img:hover {
+  -webkit-filter: grayscale(0);
+          filter: grayscale(0);
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  z-index: 999;
+}
+
+.project__titulo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 50px 0;
+}
+
+.project__gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+@media (min-width: 1024px) {
+  #project {
+    max-width: 1680px;
+    margin: auto;
+  }
+  .project__gallery {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom: 50px;
+  }
+  .project__gallery a img {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+/*# sourceMappingURL=sass.css.map */

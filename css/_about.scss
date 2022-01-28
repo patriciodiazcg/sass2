@@ -1,0 +1,38 @@
+
+@mixin images ($width, $heigh) {
+    width: $width;
+    height: $heigh;
+    object-fit: cover;
+}
+
+
+.about {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    &__img {
+        img {
+            @include images (100%,auto);
+        }
+    }
+    &__texto {
+        width: 100%;
+        color: #000;
+        line-height: 30px;
+        margin: 70px auto;
+        padding: 0 30px;
+        h2 {
+            margin-bottom: 20px;
+            font-size: 30px;
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+
+    .about {
+    max-width: 1280px;
+    margin:70px auto;
+    grid-template-columns: 1fr 1fr;
+    }
+}
